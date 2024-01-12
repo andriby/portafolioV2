@@ -1,0 +1,13 @@
+<!--
+  Realizar un portafolio sobre mi persona, utilizando Tailwind CSS,
+  agregando animaciones. El portafolio debe ser responsive y contener:
+  - Tu nombre y apellido
+  - Una foto tuya
+  - Una descripción sobre ti
+  - Tu experiencia laboral
+  - Tus estudios
+  - Tus habilidades
+  - Tus proyectos
+  - Tu contacto
+  Fecha de entrega: 16/01/24
+-->
