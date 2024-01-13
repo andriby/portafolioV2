@@ -6,40 +6,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/696cba56fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Portafolio</title>
 </head>
 <body class="text-white">
 
-    <!-- <div class="loader flex justify-center items-center h-screen w-screen z-10 fixed">
+     <!-- <div class="loader flex justify-center items-center h-screen w-screen z-30 fixed">
         <div class="spinner">
             <div class="spinner1"></div>
         </div>
-    </div> -->
+    </div>  -->
 
-    <header class="flex flex-col justify-center items-center py-14 px-5 mb-8 bg-fixed h-screen bg-cover bg-center" style="background-image: url(./assets/background-header.jpg)">
-        <h1 class="text-3xl font-bold">Adrian Campos</h1>
-        <h3 class="subpixel-antialiased text-slate-400">Desarrollador <span class="font-semibold">Web</span></h3>
+    <header class="container mx-auto flex flex-col justify-start items-start py-8 px-5 mb-1">
+        <h1 class="text-4xl font-bold font-['Open_Sans'] z-20">Adrián Campos</h1>
+        <h3 class="text-slate-200 font-['Open_Sans'] text-1xl z-20">Desarrollador <span class="font-semibold">Web</span></h3>
     </header>
-    <main class="container px-3 py-2">
-        <section>
-                <h2 class="text-2xl font-semibold">¿Quien soy?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora necessitatibus voluptatum animi perferendis corporis, ad porro expedita eaque sint, quam fuga aliquam omnis neque! Eum illum perferendis iste facere.</p>
+
+    <main class="container mx-auto px-3 py-2">
+        <section class="mb-16 p-3">
+            <h2 data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="text-3xl	 font-semibold font-['Roboto_Condensed'] mb-1">¿Quien soy?</h2>
+            <p data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="font-['Lato'] text-base"> Como desarrollador web junior con experiencia en la creación y mantenimiento de sitios web, estoy colaborando con un equipo de desarrolladores para aprender las mejores prácticas. Además, estoy haciendo un curso completo de desarrollo web para mejorar mis habilidades.</p>
+            <img data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" src="./assets/imagen-yo.jpg" class="rounded-md shadow-lg shadow-blue-500/50 mt-10">
+        </section>
+
+        <section class=" p-3">
+            <h2 data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="text-3xl font-semibold font-['Roboto_Condensed'] mb-10 text-center">Lenguajes conocidos</h2>
+            <div data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom" class="flex justify-around items-stretch">
+                <div class="flex flex-col gap-5 items-center justify-between"><img src="./assets/css.png" class="w-14"><span class="font-['Lato'] text-center font-semibold text-lg">CSS</span></div>
+                <div class="flex flex-col gap-5 items-center justify-between"><img src="./assets/html.png" class="w-16"><span class="font-['Lato'] text-center font-semibold text-lg">HTML</span></div>
+                <div class="flex flex-col gap-5 items-center justify-between"><img src="./assets/tailwind.png" class="w-20 mt-2"><span class="font-['Lato'] text-center font-semibold text-lg ">TAILWIND</span></div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <h3>Contacto</h3>
-            <ul>
-                <li><span>Github</span></li>
-                <li><span>Linkdn</span></li>
-                <li><span>TikTok</span></li>
-            </ul>
-        </div>
+
+    <footer class="container mx-auto p-3 my-10">
+        <h3 data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="text-3xl	text-center font-bold font-['Roboto_Condensed'] mb-10">Contacto</h3>
+        <ul data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom" class="flex flex-col md:flex-row items-center justify-evenly gap-7">
+            <li><a class="flex md:flex-col items-center font-['Lato'] font-semibold text-center gap-1 text-2xl" href="#"><i class="fa-brands fa-github"></i><span class="font-['Lato']">Github</span></a></li>
+            <li><a class="flex md:flex-col items-center font-['Lato'] font-semibold text-center gap-1 text-2xl" href="#"><i class="fa-brands fa-linkedin"></i><span class="font-['Lato']">Linkedin</span></a></li>
+            <li><a class="flex md:flex-col items-center font-['Lato'] font-semibold text-center gap-1 text-2xl" href="#"><i class="fa-brands fa-tiktok"></i><span class="font-['Lato']">TikTok</span></a></li>
+        </ul>
     </footer>
-    <nav class="sticky bottom-0 flex justify-around py-2 bg-[#1F2C3B]">
-        <div class="flex flex-col justify-center items-center"><i class="fa-solid fa-folder"></i> <span>Proyectos</span></div>
-        <div class="flex flex-col justify-center items-center"><i class="fa-solid fa-house"></i> <span>Inicio</span></div>
-        <div class="flex flex-col justify-center items-center"><i class="fa-solid fa-list"></i> <span>Descripcion</span></div>
+
+
+    <nav class="sticky bottom-0 flex justify-around items-stretch py-2 bg-[#1F2C3B] z-10">
+        <a class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800"><i class="fa-solid fa-folder"></i> <span class="text-lg">Proyectos</span></a>
+        <a class="flex flex-col justify-center items-center bg-[#2d3f54] rounded p-2 cursor-pointer font-['Roboto_Condensed'] shadow-lg shadow-gray-800"><i class="fa-solid fa-house"></i> <span class="text-lg drop-shadow	shadow-blue-500/50">Inicio</span></a>
+        <a class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800"><i class="fa-solid fa-list"></i> <span class="text-lg">Descripcion</span></a>
     </nav>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
