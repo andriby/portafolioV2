@@ -1,38 +1,47 @@
-body, .loader {
+body {
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
 
-.spinner {
-  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
-  width: 100px;
-  height: 100px;
-  animation: spinning82341 1.7s linear infinite;
-  text-align: center;
-  border-radius: 50px;
-  filter: blur(1px);
-  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
 
-.spinner1 {
-  background-color: rgb(36, 36, 36);
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  filter: blur(10px);
+::-webkit-scrollbar:vertical {
+  width:10px;
 }
 
-@keyframes spinning82341 {
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+  display: none;
+} 
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
 }
 
-.loader {
-  animation: load 3s linear forwards;
+::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  border-radius: 20px;
+  border: 2px solid #061629;
 }
 
-@keyframes load {
-  100%{
-      display: none;
-  }
+::-webkit-scrollbar-track {
+  background: radial-gradient(ellipse at bottom, #101d2d 0%, #111217 100%);
+}
+
+.contenido-proyecto{
+  top: -80px;
+}
+
+.proyecto:hover .contenido-proyecto{
+  top: 30%;
+}
+.bg-gradient{
+  background: rgb(30,68,108);
+  background: radial-gradient(circle, rgba(30,68,108,0.865983893557423) 16%, rgba(25,39,78,0.7175245098039216) 69%, rgba(29,35,70,0.7455357142857143) 94%);
+}
+
+
+.bg-gradient-proyectos{
+  background: rgb(50,66,152);
+  background: linear-gradient(45deg, rgba(50,66,152,0.9220063025210083) 18%, rgba(168,62,84,1) 100%);
 }

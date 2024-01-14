@@ -15,27 +15,139 @@
 </head>
 <body class="text-white">
 
-    <!-- <div class="loader flex justify-center items-center h-screen w-screen z-30 fixed">
-        <div class="spinner">
-            <div class="spinner1"></div>
-        </div>
-    </div>  -->
+<div class="md:flex gap-4">
+    <aside class="hidden md:flex flex-col items-stretch justify-evenly sticky h-screen top-0 px-4">
+        <a href="./proyectos.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out">
+            <i class="fa-solid fa-folder"></i> 
+            <span class="text-lg">Proyectos</span>
+        </a>
+        <a href="./index.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out">
+            <i class="fa-solid fa-house"></i> 
+            <span class="text-lg">Inicio</span>
+        </a>
+        <a href="./descripcion.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  bg-[#2d3f54] hover:shadow-lg shadow-gray-800">
+            <i class="fa-solid fa-list"></i> 
+            <span class="text-lg">Descripcion</span>
+        </a>
+    </aside>
 
-    <header class="container mx-auto flex flex-col justify-start items-start py-8 px-5 mb-1">
-        <h1 class="text-4xl font-bold font-['Open_Sans'] z-20">Descripcion</h1>
-        <h3 class="text-slate-200 font-['Open_Sans'] text-1xl z-20">Desarrollador <span class="font-semibold">Web</span></h3>
-    </header>
 
-    <main class="container mx-auto px-3 py-2">
-        
-    </main>
+    <div class="container mx-auto">
+
+        <header class="container mx-auto flex flex-col justify-start items-start py-10 px-5 mb-1">
+            <h1 class="text-5xl font-bold font-['Open_Sans']">Descripcion</h1>
+            <h3 class="text-slate-200 font-['Open_Sans'] text-1xl">Mas sobre <span class="font-semibold">mi</span></h3>
+        </header>
+
+        <main class="container mx-auto px-3 py-2">
+            <section class="px-3 bg-gradient shadow-lg shadow-indigo-500/50 rounded-xl py-12 mb-32">
+
+                <h2 data-aos="zoom-in" class="text-center font-['Roboto_Condensed'] pb-6 text-4xl">Aptitudes</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <div data-aos="flip-down" class="w-[85%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out overflow-hidden">
+                        <img src="./assets/creativo.jpeg" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <div class="absolute top-50">
+                            <p class="text-center font-bold text-white font-['Lato'] text-5xl">
+                                Creativo
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div data-aos="flip-down" class="w-[85%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out overflow-hidden">
+                        <img src="./assets/innovador.jpeg" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <div class="absolute top-50">
+                            <p class="text-center font-bold text-white font-['Lato'] text-5xl">
+                                Innovador
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div data-aos="flip-down" class="w-[85%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out overflow-hidden">
+                        <img src="./assets/aprendizaje-rapido.jpeg" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <div class="absolute top-50">
+                            <p class="text-center font-bold text-white font-['Lato'] text-5xl">
+                                Aprendizaje Rapido
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
 
 
-    <nav class="sticky bottom-0 flex justify-around items-stretch py-2 bg-[#1F2C3B] z-10">
-        <a href="./proyectos.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out"><i class="fa-solid fa-folder"></i> <span class="text-lg">Proyectos</span></a>
-        <a href="./index.html" class="flex flex-col justify-center items-center hover:bg-[#2d3f54] rounded p-2 cursor-pointer font-['Roboto_Condensed'] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out"><i class="fa-solid fa-house"></i> <span class="text-lg">Inicio</span></a>
-        <a href="./descripcion.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  bg-[#2d3f54] hover:shadow-lg shadow-gray-800 transition ease-in-out"><i class="fa-solid fa-list"></i> <span class="text-lg drop-shadow	shadow-blue-500/50"">Descripcion</span></a>
-    </nav>
+            <section data-aos="zoom-in-up" class="py-10 md:px-32 px-8 bg-slate-950 rounded-xl mb-32 shadow-lg shadow-blue-500/50 md:w-[60%] mx-auto">
+                <p class="text-center font-['Lato'] font-medium font-semibold italic">
+                    "Me considero una persona extrovertida y apasionada por el aprendizaje. Disfruto de actividades como jugar, leer y sumergirme en el mundo del desarrollo. Esta pasión me impulsa a explorar constantemente nuevas áreas de conocimiento y a buscar experiencias en el ámbito del desarrollo." 
+                </p>
+            </section>
+
+            <section class="px-3 bg-gradient rounded-xl py-12 mb-32 shadow-lg shadow-indigo-500/50">
+
+                <h2 data-aos="zoom-in" class="text-center font-['Roboto_Condensed'] pb-6 text-4xl">Estudios</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div data-aos="flip-down" class="w-[85%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out">
+                        <img src="./assets/liceo.png" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <span class="text-center font-bold text-white font-['Lato'] text-1xl">
+                            Tecnico Medio en Informatica (2017-2023)
+                        </span>
+                    </div>
+    
+                    <div data-aos="flip-down" class="w-[85%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out">
+                        <img src="./assets/curso.png" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <span class="text-center font-bold text-white font-['Lato'] text-1xl">
+                            Curso de programacion Web (2023-Ahora)
+                        </span>
+                    </div>
+    
+            </section>
+
+            <section class="px-3 rounded-xl py-12 mb-32 md:w-[90%] mx-auto bg-gradient shadow-lg shadow-indigo-500/50">
+
+                <h2 data-aos="zoom-in" class="text-center font-['Roboto_Condensed'] mb-16 text-4xl">Experiencia Laboral</h2>
+
+                <div class="flex flex-col md:flex-row justify-center items-center w-[90%] mx-auto gap-5">
+                    <div data-aos="flip-down" class="w-[40%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out w-[50%]">
+                        <img src="./assets/ipsfa.png" class="rounded-2xl shadow-sm shadow-indigo-500/50">
+                        <span class="text-center font-bold text-white font-['Lato'] text-md">
+                            Instituto de Prevision Social Para las Fuerzas Armadas <br>
+                            (2023-Ahora) <br>
+                            <span class="font-light text-sm">Operador de Equipo de Computacion</span> 
+                        </span>
+                    </div>
+    
+                    <div data-aos="flip-down" class="w-[30%] mx-auto flex flex-col gap-3 font-semibold justify-center items-center hover:scale-105 transition ease-in-out">
+                        <h2 class="font-['Roboto_Condensed'] text-3xl mb-3">Funciones principales</h2>
+                        <span class="text-center font-bold text-white font-['Lato'] text-1xl">
+                            Mantenimiento y actualización de sitios web corporativos, soporte de sistemas internos para garantizar eficiencia y disponibilidad, configuración y administración de servidores para respaldar operaciones empresariales.
+                        </span>
+                    </div>
+    
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<nav class="sticky bottom-0 flex md:hidden justify-around items-stretch py-2 bg-[#1F2C3B] z-10">
+
+    <a href="./proyectos.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  hover:bg-[#2d3f54] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out">
+        <i class="fa-solid fa-folder"></i> 
+        <span class="text-lg">Proyectos</span>
+    </a>
+
+    <a href="./index.html" class="flex flex-col justify-center items-center hover:bg-[#2d3f54] rounded p-2 cursor-pointer font-['Roboto_Condensed'] hover:shadow-lg hover:shadow-gray-800 transition ease-in-out">
+        <i class="fa-solid fa-house"></i> 
+        <span class="text-lg">Inicio</span>
+    </a>
+
+    <a href="./descripcion.html" class="flex flex-col justify-center items-center rounded p-2 cursor-pointer font-['Roboto_Condensed']  bg-[#2d3f54] hover:shadow-lg shadow-gray-800 transition ease-in-out">
+        <i class="fa-solid fa-list"></i> 
+        <span class="text-lg drop-shadow shadow-blue-500/50">Descripcion</span>
+    </a>
+
+</nav>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
